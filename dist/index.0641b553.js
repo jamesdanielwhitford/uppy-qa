@@ -539,7 +539,7 @@ var _xhrUpload = require("@uppy/xhr-upload");
 var _xhrUploadDefault = parcelHelpers.interopDefault(_xhrUpload);
 var _dashboard = require("@uppy/dashboard");
 var _dashboardDefault = parcelHelpers.interopDefault(_dashboard);
-const uploadUrl = `${"http://localhost:3000"}/image`;
+const uploadUrl = `${"https://uppy-qa-tszrdt.codecapsules.co.za"}/image`;
 const uppy = new (0, _coreDefault.default)().use((0, _dashboardDefault.default), {
     inline: true,
     target: "#drag-drop-area"
@@ -551,7 +551,7 @@ const uppy = new (0, _coreDefault.default)().use((0, _dashboardDefault.default),
 uppy.on("complete", (result)=>{
     console.log(result);
     for (const file of result.successful){
-        const url = `${"http://localhost:3001"}/${file.response.body.msg}`;
+        const url = `${"https://uppy-qa-ztzhxc.codecapsules.co.za"}/${file.response.body.msg}`;
         const link = document.createElement("a");
         link.href = url;
         link.innerHTML = url;
@@ -7545,9 +7545,9 @@ parcelHelpers.export(exports, "thumbnailOnlyOptions", ()=>le);
 parcelHelpers.export(exports, "thumbnailUrl", ()=>ue);
 parcelHelpers.export(exports, "tiffBlocks", ()=>P);
 parcelHelpers.export(exports, "tiffExtractables", ()=>j);
-var Buffer = require("buffer").Buffer;
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
+var Buffer = require("buffer").Buffer;
 function e(e, t, s) {
     return t in e ? Object.defineProperty(e, t, {
         value: s,
