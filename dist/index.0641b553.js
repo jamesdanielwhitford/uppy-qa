@@ -539,7 +539,7 @@ var _xhrUpload = require("@uppy/xhr-upload");
 var _xhrUploadDefault = parcelHelpers.interopDefault(_xhrUpload);
 var _dashboard = require("@uppy/dashboard");
 var _dashboardDefault = parcelHelpers.interopDefault(_dashboard);
-const uploadUrl = `${"https://uppy-qa-tszrdt.codecapsules.co.za"}/image`;
+const uploadUrl = `${undefined}/image`;
 const uppy = new (0, _coreDefault.default)().use((0, _dashboardDefault.default), {
     inline: true,
     target: "#drag-drop-area"
@@ -551,7 +551,7 @@ const uppy = new (0, _coreDefault.default)().use((0, _dashboardDefault.default),
 uppy.on("complete", (result)=>{
     console.log(result);
     for (const file of result.successful){
-        const url = `${"https://uppy-qa-ztzhxc.codecapsules.co.za"}/${file.response.body.msg}`;
+        const url = `${undefined}/${file.response.body.msg}`;
         const link = document.createElement("a");
         link.href = url;
         link.innerHTML = url;
