@@ -1,0 +1,7 @@
+node_modules
+src/node_modules
+uploads/*
+src/.parcel-cache/*
+src/dist/*
+.parcel-cache/*
+*.DS_Store
